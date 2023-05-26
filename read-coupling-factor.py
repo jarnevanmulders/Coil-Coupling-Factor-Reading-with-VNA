@@ -69,7 +69,6 @@ def design_screen():
 def read_data():
     # set to single sweep and perform a measurement
     vna.write("INIT:CONT OFF")
-    vna.write("INIT")
     print(vna.query("*OPC?"))
 
     # Read trace 1 S11
